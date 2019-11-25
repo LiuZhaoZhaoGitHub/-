@@ -1,0 +1,19 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "requirejs": "^2.3.6"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
+}

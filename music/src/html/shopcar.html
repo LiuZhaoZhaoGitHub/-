@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/shopcar.css">
+</head>
+
+<body style="min-height: 407px;">
+
+    <!--header-->
+    <div id="header" class="ml_header">
+        <div class="content">
+            <a class="home" a-tj="nav-logo" href="/mall/">&nbsp;</a>
+            <ul class="nav">
+                <li a-tj="nav-user" class="logout" n-type="userState">
+                    <a href="javascript:void(0)"><img src="//static1.qianqian.com/pc-mall/img/user.png">180****3776<span>&nbsp;</span></a>
+                    <div class="menuList"> <a href="/mall/order/list.html" a-tj="nav-orderList">我的订单</a><a a-tj="nav-myPoint" href="/mall/account/myPoint.html">我的积分</a><a href="/mall/my/loc.html">收货地址</a><a href="javascript:void(0)" a-type="logout" class="out">退出</a> </div>
+                </li>
+                <li>
+                    <a a-tj="nav-home" href="/mall/">首页</a>
+                </li>
+                <li>
+                    <a a-tj="nav-goodsList" href="/mall/goods/goodsList.html">商品</a>
+                </li>
+                <li>
+                    <a a-tj="nav-bpList" href="/mall/bpList.html">积分</a>
+                </li>
+                <li>
+                    <a a-tj="nav-orderList" href="/mall/order/list.html">订单</a>
+                </li>
+                <!-- <li><em></em></li>
+            <li class="myPoint">
+                <a a-tj="nav-myPoint" href="/mall/account/myPoint.html">我的积分<span n-type="point"></span></a>
+            </li>
+            <li><em></em></li>
+            <li>
+                <a a-tj="nav-help" href="/mall/help.html">帮助中心</a>
+            </li> -->
+            </ul>
+        </div>
+
+    </div>
+    <!--/header-->
+
+    <!--orderFillIn-->
+    <div class="ml_order_orderFillIn" id="orderFillIn">
+        <!--orderFillIn-->
+        <div class="order-box">
+            <h3>订单详情</h3>
+            <div class="orderInfoBox" id="orderAddress">
+
+                <div n-type="orderAddress">
+                    <!--orderAddress-->
+                    <div class="item address" n-type="addressList">
+
+                        <h3>选择地址</h3>
+                        <a href="javascript:void(0);" class="addtem" a-type="addLoc">+新增收货地址</a>
+
+                    </div>
+
+                    <!--/orderAddress-->
+                </div>
+
+                <div class="item info">
+                    <label>商品信息</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="120"></th>
+                                <th width="240" class="alignLeft">商品名称</th>
+
+                                <th>商品属性</th>
+
+                                <th>单价</th>
+                                <th width="200">数量</th>
+                                <th width="120">小计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/mall/goods/details.html?goodsId=65" target="_blank">
+
+
+
+                                        <img src="https://business4.qianqian.com/tmall/pic/150114208329ee9380d57315ad26d9ec1741fea647.png@w_400">
+
+
+
+
+
+
+
+
+
+                                    </a>
+                                </td>
+                                <td class="name"><a href="/mall/goods/details.html?goodsId=65" target="_blank">百度音乐&amp; 1MORE 入耳式线控耳机</a></td>
+
+                                <td></td>
+
+                                <td class="price" n-type="price">149.00</td>
+                                <td>
+                                    <span class="tb-stock" n-type="numContainer">
+                            <a href="javascript:void(0);" a-type="minus" n-type="minus" title="减1" class="adjust minus disabled">-</a>
+                            <input type="text" class="tb-text" value="1" n-type="number" maxlength="8" title="请输入购买量">
+                            <a href="javascript:void(0);" a-type="plus" n-type="plus" title="加1" class="adjust plus">+</a>
+                            <div class="hide">
+                                <em n-type="inventory">99</em>
+                            </div>
+                        </span>
+                                    <p class="err-msg" n-type="errMsg"></p>
+                                </td>
+                                <td class="subtotal">
+                                    <span n-type="subtotal">149.00</span>
+                                    <span n-type="spare" class="spare hide">
+                            节省
+                            <em n-type="reductionPrice">0</em>
+                            元
+                            <em n-type="reductionStandard" class="hide">0</em>
+                        </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="item message">
+                    <label>留言：</label>
+                    <p>
+                        <textarea class="word default" maxlength="200" n-type="word" placeholder="若对购买的商品有特殊要求，可在此留言"></textarea>
+                        <span n-type="wordTip">还可以输入<em n-type="wordNum">200</em>字</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="opts">
+            <label>
+    
+        实际付款：
+    
+</label>
+            <em>¥</em>
+            <span n-type="money">149.00</span>
+            <p>
+                <a href="javascript:void(0);" a-type="pay" a-data="goodsCategory=1">
+        
+            提交订单
+        
+    </a>
+            </p>
+        </div>
+        <!--/orderFillIn-->
+    </div>
+    <!--/orderFillIn-->
+
+    <!--toolbar-->
+    <div class="ml_goods_toolbar" id="toolbar">
+        <ul>
+            <li a-type="top"><i class="top"></i><span>回到顶部</span></li>
+            <li><a href="/feedback" target="_blank"><i class="opinion"></i><span>意见反馈</span></a></li>
+            <li><a href="/mall/help.html" target="_blank"><i class="help"></i><span>帮助说明</span></a></li>
+        </ul>
+    </div>
+    <!--/toolbar-->
+
+    <!--footer-->
+
+    <!--/footer-->
+    <script src="//static0.qianqian.com/pc-mall/prd/scripts/page/order/orderFillIn@50a70c7e6eda243bef013a5bed438cb3.js"></script>
+
+    <audio controls="controls" style="display: none;"></audio></body>
+<div class="ml_footer" id="footer" style="display: block;">
+    <div class="equities">
+        <ul>
+            <li><i></i>全国包邮</li>
+            <li><i class="aqbz"></i>正品保障</li>
+            <li><i class="wly"></i>7天无理由退货</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div alog-alias="music-foot-alog" monkey="music-foot" class="music-foot clearfix">
+
+            <p>
+                <a rel="nofollow" target="_blank" href="/feedback">意见反馈</a>
+                <i class="module-line"></i>
+                <a rel="nofollow" href="/mall/help.html" target="_blank">帮助中心</a>
+                <i class="module-line"></i>
+                <!-- <a rel="nofollow" target="_blank" href="http://musicopen.baidu.com">资源合作开放平台</a>
+        <i class="module-line"></i> -->
+                <a target="_blank" href="//y.taihe.com">原创音乐人</a>
+            </p>
+            <p class="info">
+                <span class="license">Copyright 2018 © .TAIHE MUSIC GROUP&nbsp;&nbsp;&nbsp;[粤ICP备17102508号-2]</span>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+</html>

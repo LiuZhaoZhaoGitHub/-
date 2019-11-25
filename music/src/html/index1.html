@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="../js/require.js" data-main="../js/lib/main.index.js"></script>
+    <link rel="stylesheet" href="../style/index1.css">
+</head>
+
+<body style="min-height: 392px;">
+    <!--header-->
+    <div id="header" class="ml_header">
+        <div class="content">
+            <a class="home" a-tj="nav-logo" href="/mall/">&nbsp;</a>
+            <ul class="nav">
+                <li a-tj="nav-user" class="login" n-type="userState"><em>&nbsp;</em>您好，请<a href="..//html/login.html" a-type="login">登录</a></li>
+                <li>
+                    <a a-tj="nav-home" href="/mall/">首页</a>
+                </li>
+                <li>
+                    <a a-tj="nav-goodsList" href="/mall/goods/goodsList.html">商品</a>
+                </li>
+                <li>
+                    <a a-tj="nav-bpList" href="/mall/bpList.html">积分</a>
+                </li>
+                <li>
+                    <a a-tj="nav-orderList" href="/mall/order/list.html">订单</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!--/header-->
+    <!--banner-->
+    <div id="banner" class="ml_banner">
+        <!--banner-->
+        <ul n-type="container " class="direct">
+        </ul>
+        <div class="control">
+            <a class="right" a-type="right" href="javascript:;"><span>&nbsp;</span></a>
+            <a class="left" a-type="left" href="javascript:;"><span>&nbsp;</span></a>
+            <p class="point" n-type="pointContainer">
+
+
+                <em a-type="point" a-data="idx=0" class=""></em>
+
+
+
+                <em a-type="point" a-data="idx=1" class=""></em>
+
+
+
+                <em a-type="point" a-data="idx=2" class=""></em>
+
+
+
+                <em a-type="point" a-data="idx=3" class="on"></em>
+
+
+            </p>
+        </div>
+        <!--/banner-->
+    </div>
+    <!--/banner-->
+
+    <!--goods_tops-->
+    <div class="ml_goods_tops" id="goods_tops">
+        <!--recGoods-->
+        <div class="ml_goods_recGoods posFlag louceng ">
+            <h2>为您推荐</h2>
+
+            <div class="listBox clearfix" n-type="listBox">
+                <ul class="clearfix remonn">
+
+
+                </ul>
+                <ul class="clearfix">
+
+                </ul>
+            </div>
+
+        </div>
+        <!--/recGoods-->
+
+        <!--advertising-->
+        <!--
+<div class="ml_goods_advertising">
+	<div class="clearfix">
+		<a href="/mall/goods/details.html?goodsId=237&from=pcweb_mall_ads" target="_blank"><img src="//static1.qianqian.com/pc-mall/img/temp_adv01.jpg" /></a>
+		<a href="/mall/goods/details.html?goodsId=235&from=pcweb_mall_ads" target="_blank"><img src="//static1.qianqian.com/pc-mall/img/temp_adv02.jpg" /></a>
+	</div>
+</div>
+-->
+        <!--/advertising-->
+    </div>
+    <!--/goods_tops-->
+
+    <!--goodsList-->
+    <div class="ml_goods_goodsItem" id="goods_goodsItem">
+
+        <div class="ml_goods_otherList">
+            <!--otherType-->
+
+
+            <div class="ml_goods_otherType posFlag louceng" cateid="2">
+                <div class="head clearfix">
+                    <h2>影音硬件</h2>
+                    <div class="all">
+                        <a href="/mall/goods/goodsList.html?cateId=2" target="_blank">查看全部<i class="iconAll"></i></a>
+                    </div>
+                </div>
+                <div class="listBox">
+
+                    <ul class="clearfix starlist">
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="ml_goods_otherType posFlag louceng" cateid="4">
+                <div class="head clearfix">
+                    <h2>明星周边</h2>
+                    <div class="all">
+                        <a href="/mall/goods/goodsList.html?cateId=4" target="_blank">查看全部<i class="iconAll"></i></a>
+                    </div>
+                </div>
+                <div class="listBox">
+
+                    <ul class="clearfix  listare">
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="ml_goods_otherType posFlag louceng" cateid="5">
+                <div class="head clearfix">
+                    <h2>其它商品</h2>
+                    <div class="all">
+                        <a href="/mall/goods/goodsList.html?cateId=5" target="_blank">查看全部<i class="iconAll"></i></a>
+                    </div>
+                </div>
+                <div class="listBox">
+
+                    <ul class="clearfix starlist">
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <!--/otherType-->
+        </div>
+    </div>
+    <!--/goodsList-->
+
+    <!--leftMenu-->
+    <div class="ml_goods_leftMenu show" id="leftMenu" style="left: 80px;">
+        <ul>
+
+            <li a-type="item" class="active ">为您推荐</li>
+
+
+            <li a-type="item" class="" cateid="2">影音硬件</li>
+
+            <li a-type="item" class="" cateid="4">明星周边</li>
+
+            <li a-type="item" class="" cateid="5">其它商品</li>
+
+            <li class="last" a-type="top"><i></i>顶部</li>
+        </ul>
+    </div>
+    <!--/leftMenu-->
+    <!--toolbar-->
+    <div class="ml_goods_toolbar" id="toolbar">
+        <ul>
+            <li a-type="top" class="last"><i class="top"></i><span>回到顶部</span></li>
+            <li><a href="/feedback" target="_blank"><i class="opinion"></i><span>意见反馈</span></a></li>
+            <li><a href="/mall/help.html" target="_blank"><i class="help"></i><span>帮助说明</span></a></li>
+        </ul>
+    </div>
+    <!--/toolbar-->
+
+    <!--footer-->
+
+    <!--/footer-->
+    <script src="../js/jquery.min.js"></script>
+
+    <audio controls="controls" style="display: none;"></audio></body>
+<div class="ml_footer" id="footer" style="display: block;">
+    <div class="equities">
+        <ul>
+            <li><i></i>全国包邮</li>
+            <li><i class="aqbz"></i>正品保障</li>
+            <li><i class="wly"></i>7天无理由退货</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div alog-alias="music-foot-alog" monkey="music-foot" class="music-foot clearfix">
+
+            <p>
+                <a rel="nofollow" target="_blank" href="/feedback">意见反馈</a>
+                <i class="module-line"></i>
+                <a rel="nofollow" href="/mall/help.html" target="_blank">帮助中心</a>
+                <i class="module-line"></i>
+                <!-- <a rel="nofollow" target="_blank" href="http://musicopen.baidu.com">资源合作开放平台</a>
+			<i class="module-line"></i> -->
+                <a target="_blank" href="//y.taihe.com">原创音乐人</a>
+            </p>
+            <p class="info">
+                <span class="license">Copyright 2018 © .TAIHE MUSIC GROUP&nbsp;&nbsp;&nbsp;[粤ICP备17102508号-2]</span>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+</html>

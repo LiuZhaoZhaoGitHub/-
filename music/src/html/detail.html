@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/require.js" data-main="../js/lib/main.index.js"></script>
+    <link rel="stylesheet" href="../style/detail.css">
+</head>
+
+<body style="min-height: 407px;">
+
+    <!--header-->
+    <div id="header" class="ml_header">
+        <div class="content">
+            <a class="home" a-tj="nav-logo" href="/mall/">&nbsp;</a>
+            <ul class="nav">
+                <li a-tj="nav-user" class="login" n-type="userState"><em>&nbsp;</em>您好，请<a href="javascript:void(0)" a-type="login">登录</a></li>
+                <li>
+                    <a a-tj="nav-home" href="/mall/">首页</a>
+                </li>
+                <li>
+                    <a a-tj="nav-goodsList" href="/mall/goods/goodsList.html">商品</a>
+                </li>
+                <li>
+                    <a a-tj="nav-bpList" href="/mall/bpList.html">积分</a>
+                </li>
+                <li>
+                    <a a-tj="nav-orderList" href="/mall/order/list.html">订单</a>
+                </li>
+                <!-- <li><em></em></li>
+            <li class="myPoint">
+                <a a-tj="nav-myPoint" href="/mall/account/myPoint.html">我的积分<span n-type="point"></span></a>
+            </li>
+            <li><em></em></li>
+            <li>
+                <a a-tj="nav-help" href="/mall/help.html">帮助中心</a>
+            </li> -->
+            </ul>
+        </div>
+
+    </div>
+    <!--/header-->
+
+    <!--details-->
+    <div id="details" class="ml_goods_details clearfix">
+        <!--breadcrumb-->
+        <div class="ml_goods_breadcrumb">
+            <a href="/mall">首页</a><em>&gt;</em><span>百度音乐&amp; 1MORE 入耳式线控耳机</span>
+        </div>
+        <!--/breadcrumb-->
+
+        <!--gallery-->
+        <div class="ml_goods_gallery">
+            <div n-type="container" class="gallery-box">
+                <div class="gallery-cover">
+
+
+
+                    <img class="gallery-img" n-type="bigImg" src="">
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="gallery-list">
+                    <div class="gallery-mask">
+                        <ul class="gooscar">
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/gallery-->
+
+        <!--property-->
+        <div class="ml_goods_property">
+            <div class="property-title">
+                <h3>百度音乐&amp; 1MORE 入耳式线控耳机</h3>
+            </div>
+            <div class="time-limit clearfix hide" n-type="timeLimit" style="display: none;">
+                <span class="limitBuy"><em></em>&nbsp;限时购</span>
+                <span class="sell">直降 <em n-type="favourFee"></em>%</span>
+                <span class="delineTime time">距结束&nbsp;&nbsp;
+        <em>
+            <i n-type="t_d"></i>
+            <i n-type="t_h"></i>
+            <i n-type="t_m"></i>
+            <i n-type="t_s"></i>
+        </em>
+    </span>
+            </div>
+            <ul class="property-list">
+                <li class="property-item property-money">
+                    <span class="property-th">价格</span>
+                    <div class="property-td property-price">
+                        <strong>
+                <em class="property-rmb">¥</em>
+                <em class="property-num" n-type="price">149.00</em>
+                
+            </strong>
+
+                        <span class="property-old" n-type="old" style="display: none;">
+                    <em class="property-rmb">¥</em>
+                    <em class="property-num" n-type="marketPrice"></em>
+                </span>
+
+                        <!--
+            <div class="property-favorable hide" n-type="favorable">
+                <span class="discountRate hide"><em n-type="discountRate"></em>折</span>
+                <span class="reductionStandard hide">满<em n-type="reductionStandard"></em>减<em n-type="reductionPrice"></em></span>
+            </div>
+            -->
+                    </div>
+                    <!--
+        <div class='sales'>
+            <label>已售</label>
+            <span></span>
+        </div>
+        -->
+                </li>
+                <li class="property-item tb-sever">
+                    <span class="property-th">服务</span>
+                    <div class="property-td">
+                        <div class="server-item"><i class="qgby"></i>全国包邮</div>
+                        <div class="server-item"><i class="zpbz"></i>正品保障</div>
+                        <div class="server-item"><i class="wlyth"></i>7天无理由退货</div>
+                    </div>
+                </li>
+                <li class="property-item favorable hide" n-type="favorable">
+                    <span class="property-th">促销</span>
+                    <div class="property-td">
+                        <span class="discountRate hide"><em n-type="discountRate"></em>折</span>
+                        <span class="reductionStandard hide">满<em n-type="reductionStandard"></em>减<em n-type="reductionPrice"></em></span>
+                    </div>
+                </li>
+
+                <li class="property-item tb-amount">
+                    <span class="property-th">数量</span>
+                    <div class="property-td">
+                        <span class="tb-stock" n-type="numContainer">
+                <a href="javascript:void(0);" a-type="minus" n-type="minus" title="减1" class="adjust minus disabled">-</a>
+                <input type="text" class="tb-text" value="1" n-type="number" maxlength="8" title="请输入购买量">
+                <a href="javascript:void(0);" a-type="plus" n-type="plus" title="加1" class="adjust plus">+</a>件
+                
+                    (<em n-type="inventoryText">库存</em><em n-type="inventory">99</em><em n-type="inventoryUnit">件</em>)
+                
+            </span>
+                    </div>
+                </li>
+                <li class="property-item msg-box">
+                    <p class="err-msg" n-type="errMsg"></p>
+                </li>
+            </ul>
+
+            <div class="btn-box">
+                <a href="javascript:void(0);" class="link-pay noneBtn" a-type="pay" n-type="payBtn" style="display: inline-block;">
+        
+            立即购买
+        
+    </a>
+                <a href="javascript:void(0);" class="link-pay disabled noneBtn" n-type="noneBtn" style="display: none;">卖光了</a>
+                <a href="javascript:void(0);" class="link-pay disabled noneBtn" n-type="soldOut" style="display: none;">商品已下架</a>
+            </div>
+            <div class="share-content">
+                <div class="share-box" n-type="share">
+                    <span><i></i>分享</span>
+                    <div class="share-list">
+                        <i class="line"></i>
+                        <a href="javascript:void(0);" class="wx wxqrcode" a-type="share" a-data="type=wx" title="微信">
+                
+                <div class="wxQRCode" n-type="wxQRCode">
+                    <div class="triangle">
+                    </div>
+                    <div class="qrcode_outer">
+                        <h6>扫一扫分享到微信</h6>
+                        <div id="qrcode" class="content" title="http://music.taihe.com/mall/goods/details.html?goodsId=65">
+                        <canvas width="256" height="256" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div>
+                    </div>
+                </div>
+            </a>
+                        <a href="javascript:void(0);" class="qq" a-type="share" a-data="type=qq" title="QQ"></a>
+                        <a href="javascript:void(0);" class="qzone" a-type="share" a-data="type=qzone" title="QQ空间"></a>
+                        <a href="javascript:void(0);" class="weibo" a-type="share" a-data="type=weibo" title="微博"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/property-->
+
+        <!--info-->
+        <div class="ml_goods_info">
+            <h3 class="header">
+                产品详情
+            </h3>
+            <div class="info-body">
+                <div class="info-text">
+                    <p style="margin: 5px 0px;">百度音乐&amp; 1MORE 入耳式线控耳机</p>
+                </div>
+            </div>
+            <img src="../img/22.jpg" alt="">
+            <img src="../img/11.jpg">
+        </div>
+        <!--/info-->
+
+        <div class="ml_goods_right">
+            <!--recommend-->
+            <div class="ml_goods_recommend">
+                <h3 class="header">
+                    精品推荐
+                </h3>
+                <div n-type="recommend" class="recommend">
+                    <div class="list-box">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/recommend-->
+
+        <!--serve-->
+        <!-- <div class="ml_goods_serve">
+           
+        </div> -->
+        <!--/serve-->
+    </div>
+    </div>
+    <!--/details-->
+
+    <!--toolbar-->
+    <div class="ml_goods_toolbar" id="toolbar">
+        <ul>
+            <li a-type="top"><i class="top"></i><span>回到顶部</span></li>
+            <li><a href="/feedback" target="_blank"><i class="opinion"></i><span>意见反馈</span></a></li>
+            <li><a href="/mall/help.html" target="_blank"><i class="help"></i><span>帮助说明</span></a></li>
+        </ul>
+    </div>
+    <!--/toolbar-->
+    <script src="../js/jquery.min.js"></script>
+    <!--footer-->
+
+    <!--/footer-->
+    <!-- <script src="//static0.qianqian.com/pc-mall/prd/scripts/page/goods/details@c985af76dcf2d408c6b3602fdae173c1.js"></script> -->
+
+    <audio controls="controls" style="display: none;"></audio></body>
+<div class="ml_footer" id="footer" style="display: block;">
+    <div class="equities">
+        <ul>
+            <li><i></i>全国包邮</li>
+            <li><i class="aqbz"></i>正品保障</li>
+            <li><i class="wly"></i>7天无理由退货</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div alog-alias="music-foot-alog" monkey="music-foot" class="music-foot clearfix">
+
+            <p>
+                <a rel="nofollow" target="_blank" href="/feedback">意见反馈</a>
+                <i class="module-line"></i>
+                <a rel="nofollow" href="/mall/help.html" target="_blank">帮助中心</a>
+                <i class="module-line"></i>
+                <!-- <a rel="nofollow" target="_blank" href="http://musicopen.baidu.com">资源合作开放平台</a>
+			<i class="module-line"></i> -->
+                <a target="_blank" href="//y.taihe.com">原创音乐人</a>
+            </p>
+            <p class="info">
+                <span class="license">Copyright 2018 © .TAIHE MUSIC GROUP&nbsp;&nbsp;&nbsp;[粤ICP备17102508号-2]</span>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+</html>
